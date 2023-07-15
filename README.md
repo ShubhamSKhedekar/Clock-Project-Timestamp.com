@@ -1,6 +1,6 @@
 # Clock-Project-Timestamp.com
 <p>
-<h3>TimeStamp.com is a website which displays current date & time of Countries like India, USA & Paris. In addition to this it gives the brief information about that country, which is currently viewing.</h3>
+<h3>TimeStamp.com is a website which displays current date & time of Countries like India, USA & Paris. In addition to this it gives the brief information about that country, which is currently viewing with the help of AboutPage.</h3>
 </p>
 <p>
 <b>Scope Of Improvement:</b>
