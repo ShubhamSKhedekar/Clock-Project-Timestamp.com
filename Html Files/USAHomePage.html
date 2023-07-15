@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TimeStamp.com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS Files/style_HomePage.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TimeStamp.com</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="nav_link"
+                aria-current="page"
+                href="home1.html"
+                >Home</a
+              >
+            </li>
+
+            <div class="dropdown">
+              <div class="dropdown_first">Countries</div>
+
+              <div class="dropdown_second">
+                <a class="dropdown_heading" href="home1.html">India</a>
+                <a class="dropdown_heading" href="USAHomePage.html"
+                  ><b>USA</b></a
+                >
+                <a class="dropdown_heading" href="ParisHomePage.html">France</a>
+              </div>
+            </div>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div class="content">
+      <div class="card">
+        <h5 class="card-header">
+          Country: <var class="variables">United States America</var>
+        </h5>
+        <div class="card-body">
+          <h5 class="card-title">Current time is give_time, on give_date.</h5>
+          <p class="card-text">
+            Note: Time differences regularly change as countries observe varying
+            Daylight Saving Time (DST) schedules. The offsets listed are correct
+            until give_day, give_date , give_time. For current times worldwide,
+            use our World Clock.
+          </p>
+          <a href="USA_About.html" class="btn btn-primary"
+            >More About Country</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // var countries_list ={India:1, USA:2, America:2, Canada:3};
+      // a[0].innerHTML="Country: ";
+
+      //Date, time and Day Information
+      function update() {
+        //USA Timing Arrangement
+        date = new Date();
+        //Sat Jul 08 2023 18:42:46 GMT+0530 (India Standard Time)
+        var usaTime = date.toLocaleString("en-GB", {
+          timeZone: "America/New_York",
+        });
+        // '08/07/2023, 09:12:46'
+
+        var dateUsa = usaTime.slice(0, 2);
+        var monthUsa = usaTime.slice(3, 5) - 1;
+        var yearUsa = usaTime.slice(6, 10);
+        var hrsUsa = usaTime.slice(12, 14);
+        var minsUsa = usaTime.slice(15, 17);
+        var secUsa = usaTime.slice(18, 22);
+
+        var displayUsa = new Date();
+        const options1 = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        displayUsa.setDate(dateUsa);
+        displayUsa.setMonth(monthUsa);
+        displayUsa.setFullYear(yearUsa);
+        displayUsa.setHours(hrsUsa);
+        displayUsa.setMinutes(minsUsa);
+        displayUsa.setSeconds(secUsa);
+
+        var displayUsa2 = displayUsa.toLocaleDateString(undefined, options1);
+
+        var time = document.getElementsByClassName("card-title")[0];
+        time.innerHTML =
+          "Current time is  " +
+          hrsUsa +
+          ":" +
+          minsUsa +
+          ":" +
+          secUsa +
+          "<br>on " +
+          displayUsa2 +
+          ".";
+
+        document.getElementsByClassName("card-text")[0].innerHTML =
+          "Note: Time differences regularly change as countries observe varying Daylight Saving Time (DST) schedules. The offsets listed are correct until " +
+          displayUsa2 +
+          ". For current times worldwide, use our World Clock.";
+      }
+
+      setInterval(update, 1);
+    </script>
+  </body>
+</html>
