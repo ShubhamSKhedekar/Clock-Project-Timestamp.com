@@ -12,6 +12,6 @@ Techstack used to built this website: <b>HTML5, CSS, Javascript and Bootstrap</b
 </p>
 <div>
 I have attached screenshot of Main and About page of website, to give idea about overall glance of website.
-  <img src="./ReadMe Screenshot/HomePage Screenshot.PNG" alt="Img_Homepage">
-  <img src="./ReadMe Screenshot/AboutPage Screenshot.PNG" alt="Abt_Homepage">
+  <img src="./ReadMe Screenshot/HomePage Screenshot.PNG" alt="Img_Homepage" width="300px">
+  <img src="./ReadMe Screenshot/AboutPage Screenshot.PNG" alt="Abt_Homepage" width="300px">
 </div>
