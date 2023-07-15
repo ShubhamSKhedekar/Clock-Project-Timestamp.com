@@ -1,6 +1,6 @@
 # Clock-Project-Timestamp.com
 <p>
-TimeStamp.com is a website which displays current date & time of Countries like India, USA & Paris. In addition to this it gives the brief information about that country, which is currently viewing.
+<h3>TimeStamp.com is a website which displays current date & time of Countries like India, USA & Paris. In addition to this it gives the brief information about that country, which is currently viewing.</h3>
 </p>
 <p>
 <b>Scope Of Improvement:</b>
@@ -12,4 +12,6 @@ Techstack used to built this website: <b>HTML5, CSS, Javascript and Bootstrap</b
 </p>
 <div>
 I have attached screenshot of Main and About page of website, to give idea about overall glance of website.
+  <img src="./ReadMe Screenshot/HomePage Screenshot.PNG" alt="Img_Homepage">
+  <img src="./ReadMe Screenshot/AboutPage Screenshot.PNG" alt="Abt_Homepage">
 </div>
