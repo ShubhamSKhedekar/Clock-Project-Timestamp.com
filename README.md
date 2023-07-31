@@ -14,7 +14,7 @@ Techstack used to built this website: <b>HTML5, CSS, Javascript and Bootstrap</b
 Screenshot of Main and About page of website, to give idea about overall glance of website.
 </div>
 <br>
-<img src="https://github.com/ShubhamSKhedekar/Clock-Project-Timestamp.com/assets/125666627/a95119d5-2b53-4e6f-b020-342ac77b6546.png" alt="Img_Homepage" width="1000px"> <br> <br> 
-<img src="https://github.com/ShubhamSKhedekar/Clock-Project-Timestamp.com/assets/125666627/92107732-6264-4012-9b71-eba23f1cd2d0.png" alt="Abt_Homepage" width="1000px">
+<img src="https://github.com/ShubhamSKhedekar/Clock-Project-Timestamp.com/assets/125666627/a95119d5-2b53-4e6f-b020-342ac77b6546.png" alt="Img_Homepage" width="600px"> <br> <br> 
+<img src="https://github.com/ShubhamSKhedekar/Clock-Project-Timestamp.com/assets/125666627/92107732-6264-4012-9b71-eba23f1cd2d0.png" alt="Abt_Homepage" width="600px">
 
 
